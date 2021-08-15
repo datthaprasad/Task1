@@ -4,7 +4,6 @@ const fs=require('fs');
 const addUser=(name,email,phone,password,gender)=>{
     const users=loadUsers();
 
-    console.log("phone"+phone);
     if(!users.find((user)=>user.email===email)){
         users.push({
             name:name,
@@ -39,6 +38,7 @@ const getUser=(email,password)=>{
 
 }
 
+
 const loadUsers=()=>{
     try{
         const usersBuffer=fs.readFileSync('users.json');
@@ -58,5 +58,6 @@ const saveUsers=(users)=>{
 
 module.exports={
     addUser:addUser,
-    getUser:getUser
+    getUser:getUser,
+    loadUsers:loadUsers
 }
