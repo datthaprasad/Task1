@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 //FOR RENDER REGISTER HTML
 
 app.get('/Register',(req,res)=>{
-    res.sendFile(__dirname+'/HTML/Register.html')
+    res.sendFile(__dirname+'/html/Register.html')
 })
 
 
@@ -40,7 +40,7 @@ app.post('/Register_User',(req,res)=>{
 //FOR RENDER LOGIN HTML
 
 app.get('/Login',(req,res)=>{
-    res.sendFile(__dirname+'/HTML/Login.html')
+    res.sendFile(__dirname+'/html/Login.html')
 })
 
 //FOR HANDLE LOGIN DATA
@@ -60,7 +60,7 @@ app.post('/Login_User',(req,res)=>{
 //FOR RENDER ADMIN LOIN HTML
 
 app.get('/Admin_Login',(req,res)=>{
-    res.sendFile(__dirname+'/HTML/adminLogin.html')
+    res.sendFile(__dirname+'/html/adminLogin.html')
 })
 
 //FOR HANDLE ADMIN LOGIN DATA
@@ -84,7 +84,7 @@ app.post('/Login_Admin',(req,res)=>{
 //render Home page 
 
 app.get('/',(req,res)=>{
-    res.sendFile(__dirname+'/HTML/HTML.html')
+    res.sendFile(__dirname+'/html/HTML.html')
    
 })
 
